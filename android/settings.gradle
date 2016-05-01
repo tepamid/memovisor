@@ -1,0 +1,3 @@
+rootProject.name = 'memovisor'
+
+include ':app'
