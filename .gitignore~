@@ -35,5 +35,3 @@ npm-debug.log
 
 # typescript
 build/
-
-android/app/my-release-key.keystore
