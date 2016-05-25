@@ -78,7 +78,7 @@ def enableProguardInReleaseBuilds = false
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "com.memovisor"
@@ -98,19 +98,19 @@ android {
             include "armeabi-v7a", "x86"
         }
     }
-    signingConfigs { 
-      release { 
-        storeFile file(MYAPP_RELEASE_STORE_FILE) 
-        storePassword MYAPP_RELEASE_STORE_PASSWORD 
-        keyAlias MYAPP_RELEASE_KEY_ALIAS 
-        keyPassword MYAPP_RELEASE_KEY_PASSWORD 
-      } 
-    }
+    // signingConfigs { 
+    //   release { 
+    //     storeFile file(MYAPP_RELEASE_STORE_FILE) 
+    //     storePassword MYAPP_RELEASE_STORE_PASSWORD 
+    //     keyAlias MYAPP_RELEASE_KEY_ALIAS 
+    //     keyPassword MYAPP_RELEASE_KEY_PASSWORD 
+    //   } 
+    // }
     buildTypes {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-            signingConfig signingConfigs.release
+            // signingConfig signingConfigs.release
         }
     }
     // applicationVariants are e.g. debug, release

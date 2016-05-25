@@ -4,12 +4,11 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
-    "run-android": "react-native run-android"
+    "android": "react-native run-android"
   },
   "dependencies": {
-    "react": "^0.14.5",
-    "react-addons-perf": "^0.14.5",
-    "react-native": "^0.25.0-rc",
-    "react-native-cli": "^0.2.0"
+    "react": "15.0.2",
+    "react-native": "0.26.1",
+    "react-native-cli": "0.2.0"
   }
 }
